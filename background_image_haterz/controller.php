@@ -4,7 +4,7 @@ class BackgroundImageHaterzPackage extends Package {
 
 	protected $pkgHandle = "background_image_haterz";
 	protected $appVersionRequired = "5.5";
-	protected $pkgVersion = "1.0";
+	protected $pkgVersion = "1.0.1";
 
 	public function getPackageName() {
 		return t('Background Image Haterz');
@@ -15,7 +15,7 @@ class BackgroundImageHaterzPackage extends Package {
 	}
 
 	public function on_start() {
-		define('WHITE_LABEL_DASHBOARD_BACKGROUND_SRC', '/packages/background_image_haterz/images/white.png');
+		define('WHITE_LABEL_DASHBOARD_BACKGROUND_SRC', DIR_REL . '/packages/background_image_haterz/images/white.png');
 	}
 	
 }
